@@ -1,6 +1,9 @@
 def pmx(parent1, parent2)
 	c1, c2 = Random.new.rand(parent1.size), Random.new.rand(parent2.size)
+	return pmx_core(parent1, parent2, c1, c2)	
+end
 
+def pmx_core(parent1, parent2, c1, c2)
 	offspring1, offspring2 = Array.new(parent1.size){0}, Array.new(parent2.size){0}
 
   offspring1[c1..c2] = parent2[c1..c2]
@@ -34,5 +37,4 @@ def pmx(parent1, parent2)
 	end
 
 	return offspring1, offspring2
-	
 end

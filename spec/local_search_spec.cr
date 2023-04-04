@@ -12,4 +12,10 @@ describe "Local Search" do
 			inverse([1, 2, 3, 4, 5, 6, 7], 1, 4).should eq([1, 5, 4, 3, 2, 6, 7])
 		end
 	end
+
+	describe "#swap" do
+		it "should works" do
+			swap([1, 2, 3, 4, 5, 6, 7], 1, 4).should eq([1, 5, 3, 4, 2, 6, 7])
+		end
+	end
 end

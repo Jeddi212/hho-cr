@@ -7,3 +7,9 @@ def inverse(r, i, j)
 	r[i..j] = r[i..j].reverse
 	return r
 end
+
+
+def swap(r, i, j)
+	r[i], r[j] = r[j], r[i]
+	return r
+end

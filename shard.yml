@@ -1,0 +1,13 @@
+name: hho-cr
+version: 0.1.0
+
+authors:
+  - Jeddi212 <jedediahf51@gmail.com>
+
+targets:
+  hho-cr:
+    main: src/hho-cr.cr
+
+crystal: 1.7.3
+
+license: MIT
